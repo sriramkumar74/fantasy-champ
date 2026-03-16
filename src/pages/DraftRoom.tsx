@@ -51,7 +51,7 @@ const DraftRoom = () => {
             <Badge variant="default">Round 3</Badge>
             <div className="text-sm">
               <span className="text-muted-foreground">Current Turn: </span>
-              <span className="font-bold text-accent">Your Pick</span>
+              <span className="font-bold text-accent">Storm Kings</span>
             </div>
           </div>
           <CountdownTimer targetSeconds={90} size="lg" />
