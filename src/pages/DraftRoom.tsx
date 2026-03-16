@@ -7,7 +7,7 @@ import CountdownTimer from "@/components/CountdownTimer";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 
-const draftUsers = ["You", "Player 2", "Player 3", "Player 4"];
+const draftUsers = ["Thunder XI", "Royal Strikers", "Storm Kings", "Elite Warriors"];
 
 const draftBoard = [
   ["V. Kohli", "R. Sharma", "B. Stokes", "P. Cummins"],
