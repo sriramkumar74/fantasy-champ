@@ -34,7 +34,7 @@ const starPriority = [
 
 const DraftRoom = () => {
   const [search, setSearch] = useState("");
-  const currentPick = { round: 3, user: 0 }; // "You"
+  const currentPick = { round: 3, user: 2 }; // Storm Kings (Player 3)
 
   const filtered = availablePlayers.filter((p) =>
     p.name.toLowerCase().includes(search.toLowerCase())
