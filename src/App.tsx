@@ -13,6 +13,7 @@ import JoinLeague from "./pages/JoinLeague";
 import WeeklyModification from "./pages/WeeklyModification";
 import PlayerTrade from "./pages/PlayerTrade";
 import PlayerProfile from "./pages/PlayerProfile";
+import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
