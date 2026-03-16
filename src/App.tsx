@@ -8,6 +8,11 @@ import Dashboard from "./pages/Dashboard";
 import DraftRoom from "./pages/DraftRoom";
 import TeamCreation from "./pages/TeamCreation";
 import Leaderboard from "./pages/Leaderboard";
+import CreateLeague from "./pages/CreateLeague";
+import JoinLeague from "./pages/JoinLeague";
+import WeeklyModification from "./pages/WeeklyModification";
+import PlayerTrade from "./pages/PlayerTrade";
+import PlayerProfile from "./pages/PlayerProfile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +29,11 @@ const App = () => (
           <Route path="/draft" element={<DraftRoom />} />
           <Route path="/teams" element={<TeamCreation />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
+          <Route path="/leagues/create" element={<CreateLeague />} />
+          <Route path="/leagues/join" element={<JoinLeague />} />
+          <Route path="/weekly-modification" element={<WeeklyModification />} />
+          <Route path="/trades" element={<PlayerTrade />} />
+          <Route path="/player/:id" element={<PlayerProfile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
