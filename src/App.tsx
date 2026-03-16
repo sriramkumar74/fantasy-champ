@@ -35,6 +35,7 @@ const App = () => (
           <Route path="/weekly-modification" element={<WeeklyModification />} />
           <Route path="/trades" element={<PlayerTrade />} />
           <Route path="/player/:id" element={<PlayerProfile />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
