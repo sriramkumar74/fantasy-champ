@@ -7,7 +7,7 @@ import CountdownTimer from "@/components/CountdownTimer";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 
-const draftUsers = ["You", "Player 2", "Player 3", "Player 4"];
+const draftUsers = ["Thunder XI", "Royal Strikers", "Storm Kings", "Elite Warriors"];
 
 const draftBoard = [
   ["V. Kohli", "R. Sharma", "B. Stokes", "P. Cummins"],
@@ -34,7 +34,7 @@ const starPriority = [
 
 const DraftRoom = () => {
   const [search, setSearch] = useState("");
-  const currentPick = { round: 3, user: 0 }; // "You"
+  const currentPick = { round: 3, user: 2 }; // Storm Kings (Player 3)
 
   const filtered = availablePlayers.filter((p) =>
     p.name.toLowerCase().includes(search.toLowerCase())
@@ -51,7 +51,7 @@ const DraftRoom = () => {
             <Badge variant="default">Round 3</Badge>
             <div className="text-sm">
               <span className="text-muted-foreground">Current Turn: </span>
-              <span className="font-bold text-accent">Your Pick</span>
+              <span className="font-bold text-accent">Storm Kings</span>
             </div>
           </div>
           <CountdownTimer targetSeconds={90} size="lg" />

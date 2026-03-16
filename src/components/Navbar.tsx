@@ -59,9 +59,9 @@ const Navbar = () => {
                   3
                 </Badge>
               </button>
-              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+              <Link to="/profile" className="w-8 h-8 rounded-full bg-primary flex items-center justify-center hover:ring-2 hover:ring-primary/50 fc-transition">
                 <span className="text-primary-foreground text-xs font-bold">JD</span>
-              </div>
+              </Link>
               <button className="lg:hidden p-2" onClick={() => setMobileOpen(!mobileOpen)}>
                 {mobileOpen ? <X size={20} /> : <Menu size={20} />}
               </button>
