@@ -107,7 +107,7 @@ const Dashboard = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-bold">Active Tournaments</h2>
-              <Button size="sm" variant="outline" className="text-xs gap-1">
+              <Button size="sm" variant="outline" className="text-xs gap-1" onClick={() => navigate("/leagues/create")}>
                 <Plus size={14} /> Create League
               </Button>
             </div>
