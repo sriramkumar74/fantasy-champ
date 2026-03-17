@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { AlertTriangle, Clock, Plus, Trophy, Users, Zap } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import TournamentCard from "@/components/TournamentCard";
 import CountdownTimer from "@/components/CountdownTimer";
