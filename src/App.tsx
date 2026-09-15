@@ -39,6 +39,9 @@ const App = () => (
           <Route path="/trades" element={<PlayerTrade />} />
           <Route path="/player/:id" element={<PlayerProfile />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/tournament/:slug" element={<TournamentDetails />} />
+          <Route path="/tournament/:slug/match/:matchId" element={<MatchDetails />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
