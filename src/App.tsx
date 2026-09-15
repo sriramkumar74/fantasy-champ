@@ -14,7 +14,10 @@ import WeeklyModification from "./pages/WeeklyModification";
 import PlayerTrade from "./pages/PlayerTrade";
 import PlayerProfile from "./pages/PlayerProfile";
 import Profile from "./pages/Profile";
+import TournamentDetails from "./pages/TournamentDetails";
+import MatchDetails from "./pages/MatchDetails";
 import NotFound from "./pages/NotFound";
+
 
 const queryClient = new QueryClient();
 
