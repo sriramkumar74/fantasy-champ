@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
-import { Calendar, MapPin, Trophy } from "lucide-react";
+import { Calendar, Info, MapPin, Trophy } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { slugify } from "@/data/tournamentDetails";
 
 interface TournamentCardProps {
   name: string;
@@ -13,6 +15,7 @@ interface TournamentCardProps {
 }
 
 const TournamentCard = ({ name, format, country, startDate, status, teams }: TournamentCardProps) => {
+  const navigate = useNavigate();
   return (
     <motion.div
       whileHover={{ y: -2 }}
@@ -25,7 +28,17 @@ const TournamentCard = ({ name, format, country, startDate, status, teams }: Tou
             {status === "live" ? "LIVE" : status === "upcoming" ? "Upcoming" : "Completed"}
           </Badge>
         </div>
-        <Badge variant="outline">{format}</Badge>
+        <div className="flex items-center gap-1.5">
+          <Badge variant="outline">{format}</Badge>
+          <button
+            onClick={() => navigate(`/tournament/${slugify(name)}`)}
+            aria-label={`View ${name} details`}
+            title="Series info"
+            className="p-1 rounded-md text-muted-foreground hover:text-primary hover:bg-primary/5 fc-transition"
+          >
+            <Info size={16} />
+          </button>
+        </div>
       </div>
       <h3 className="text-base font-bold mb-2">{name}</h3>
       <div className="flex flex-col gap-1.5 text-xs text-muted-foreground mb-4">
@@ -48,3 +61,4 @@ const TournamentCard = ({ name, format, country, startDate, status, teams }: Tou
 };
 
 export default TournamentCard;
+
